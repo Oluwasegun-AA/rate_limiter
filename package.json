@@ -6,8 +6,12 @@
   "keywords": [],
   "author": "Oluwasegun Adepoju",
   "license": "ISC",
+  "engines": {
+    "node": "16.14"
+  },
   "scripts": {
-    "start": "nodemon dist/server/app.js --watch",
+    "start": "node dist/server/app.js",
+    "start:dev": "nodemon dist/server/app.js --watch",
     "build": "yarn clear && tsc",
     "seed": "node dist/db/dbSeed.js",
     "clear": "rimraf dist",

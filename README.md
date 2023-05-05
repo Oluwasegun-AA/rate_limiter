@@ -4,7 +4,9 @@
 ## Table of Contents
 * [Project Overview](#Project-Overview)
 * [Features](#Features)
-* [Demo](#demo)
+* [Environment Variables](#Environment-Variables)
+* [Test](#Test)
+* [Screenshot](#Screenshot)
 
 ## Project-Overview
  This repo exemplifies API rate limiting, using the token bucket algorithm
@@ -32,6 +34,11 @@ To run this project, you will need to add the following environment variables to
     - `PORT`=`string`(optional)
 
 ## Test
+- How To:
+    - The rate limiting functioonality is tested by making recurrent request to the endpoints. It has been configured such that
+      the API allows a max of `10 requests` per client withing a duration of `1 mminute`. After 10 successful request Error `429` is retuned. Also,
+      the rate limit innformation is returned in the headers.
+
 - Local env test
     - clone repo
     - create a .env file and supply the env variables in .env.sample
@@ -49,7 +56,7 @@ To run this project, you will need to add the following environment variables to
 
 > Note: the postman requests prepended with the "Local" keyword are to be used for local testing only
 
-## Screenshots
+## Screenshot
 <img width="1065" alt="image" src="https://user-images.githubusercontent.com/25525765/236390407-a1aac1cb-2e24-4e9e-bec4-a85fd0dfeb77.png">
 
 

@@ -20,7 +20,6 @@ const checkUserExist = async (req, res, next) => {
     url,
   } = req;
   const response = await db.findUser(req, res);
-  console.log({ response })
   if (response && (url === '/signup' || url === '/signup/' || url === '/')) {
     return ResponseHandler.error(
       res,

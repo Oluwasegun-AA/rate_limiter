@@ -2,7 +2,7 @@ import request from './requestController';
 import { extractValues } from '../helpers';
 
 const findUser = async (req, res) => {
-  const resp = await request.findOne(req, res, 'Users', 'email');
+  const resp = await request.findOne(req, res, 'Users', 'username');
   return resp;
 };
 

@@ -7,7 +7,7 @@
   "author": "Oluwasegun Adepoju",
   "license": "ISC",
   "scripts": {
-    "start": "node dist/server/app.js",
+    "start": "yarn seed && node dist/server/app.js",
     "start:dev": "nodemon dist/server/app.js --watch",
     "build": "yarn clear && tsc",
     "seed": "node dist/db/dbSeed.js",

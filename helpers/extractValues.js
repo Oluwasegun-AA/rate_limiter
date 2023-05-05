@@ -7,7 +7,7 @@ class extractValues {
       username,
       password,
       firstName,
-      lastname,
+      lastName,
       email,
     } = req.body;
     return {
@@ -15,7 +15,7 @@ class extractValues {
       username,
       password: `${Password.encrypt(password)}`,
       firstName,
-      lastname,
+      lastName,
       email,
       rateLimit: 10
     };

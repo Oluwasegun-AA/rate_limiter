@@ -9,7 +9,7 @@ const rules = {
     .min(3)
     .max(30)
     .required(),
-  firtName: joi
+  firstName: joi
     .string()
     .alphanum()
     .min(3)

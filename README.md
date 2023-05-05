@@ -9,7 +9,8 @@
 * [Screenshot](#Screenshot)
 
 ## Project-Overview
- This repo exemplifies API rate limiting, using the token bucket algorithm
+ This repo exemplifies API rate limiting, using the token bucket algorithm.
+ the rate limitter implementation can be found in middlewares/rateLimiter/limitrate
 
 ## Features
 
@@ -30,7 +31,6 @@ To run this project, you will need to add the following environment variables to
     - `PASS`=`string`(optional)
     - `MAIL_HOST`=`string`(optional)
     - `MAIL_SERVICE`=`string`(optional)
-    - `BASE_URL`=`string`(optional)
     - `PORT`=`string`(optional)
 
 ## Test

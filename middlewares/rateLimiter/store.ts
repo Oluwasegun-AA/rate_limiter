@@ -11,7 +11,7 @@ const calculateNextResetTime = (rateLimit: number): Date => {
   return resetTime;
 };
 
-//A `Store` that stores the hit count for each client in memory.
+//Store counting for each client visit in memory.
 export default class RateLimitStore implements Store {
   //The duration of time before which all hit counts are reset(in milliseconds).
   limtWindow

@@ -4,6 +4,7 @@ import {
   checkUserExist,
   checkUserInToken,
 } from './users';
+import { rateLimitter } from './rateLimiter/limitRate';
 
 export {
   validateSignupData,
@@ -11,4 +12,5 @@ export {
   validatePostMail,
   checkUserExist,
   checkUserInToken,
+  rateLimitter
 };

@@ -5,12 +5,18 @@ class extractValues {
   static userSignup(req) {
     const {
       username,
-      password
+      password,
+      firstName,
+      lastname,
+      email,
     } = req.body;
     return {
       id: `${uuidv4()}`,
       username,
       password: `${Password.encrypt(password)}`,
+      firstName,
+      lastname,
+      email,
       rateLimit: 10
     };
   }

@@ -5,7 +5,7 @@ import query from './dbSetup';
 
 const seedDb = async () => {
   const userId = uuidv4();
-  const dropTables = 'DROP TABLE IF EXISTS "Users";';
+  const dropTables = 'DROP TABLE IF EXISTS "Users", "Mails" CASCADE;';
   const userTable = `CREATE TABLE IF NOT EXISTS "Users"(
         id uuid PRIMARY KEY NOT NULL UNIQUE,
         username varchar(255) NOT NULL UNIQUE,

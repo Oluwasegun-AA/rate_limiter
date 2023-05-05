@@ -20,14 +20,15 @@ const checkUserExist = async (req, res, next) => {
     url,
   } = req;
   const response = await db.findUser(req, res);
-  if (response && (url === '/signup' || url === '/')) {
+  console.log({ response })
+  if (response && (url === '/signup' || url === '/signup/' || url === '/')) {
     return ResponseHandler.error(
       res,
       statusCodes.conflict,
      'User Already signed up'
     );
   }
-  if (!response && (url === '/login')) {
+  if (!response && ((url === '/login') || (url === '/login/'))) {
     return ResponseHandler.error(
       res,
       statusCodes.notFound,

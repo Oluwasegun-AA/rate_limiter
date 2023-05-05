@@ -10,7 +10,7 @@
 
 ## Project-Overview
  This repo exemplifies API rate limiting, using the token bucket algorithm.
- the rate limitter implementation can be found in middlewares/rateLimiter/limitrate
+ the rate limitter implementation can be found in `middlewares/rateLimiter/limitRate`
 
 ## Features
 

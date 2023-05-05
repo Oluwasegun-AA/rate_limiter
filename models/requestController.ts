@@ -22,7 +22,6 @@ class Request {
     const value = req.user['email'];
     const queryText = `SELECT * FROM "Users" WHERE "email"='${value}';`;
     const resp = await query(queryText, res);
-    console.log({resp})
     return resp[0];
   }
 

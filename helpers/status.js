@@ -8,6 +8,7 @@ const statusCodes = {
   notFound: 404,
   notAllowed: 405,
   conflict: 409,
+  tooManyRequest: 429,
   serverError: 500,
   unavailable: 503,
 };

@@ -9,6 +9,23 @@ const rules = {
     .min(3)
     .max(30)
     .required(),
+  firtName: joi
+    .string()
+    .alphanum()
+    .min(3)
+    .max(30)
+    .required(),
+  lastName: joi
+    .string()
+    .alphanum()
+    .min(3)
+    .max(30)
+    .required(),
+  email: joi
+    .string()
+    .max(256)
+    .email({ minDomainSegments: 2 })
+    .required(),
   password: joi
     .string()
     .min(6)

@@ -8,6 +8,7 @@ dotenv.config();
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
+  max: 200,
 });
 
 pool.on('error', error => {

@@ -34,7 +34,7 @@ const checkUserExist = async (req, res, next) => {
       'User Not Found'
     );
   }
-  if (url === '/login') req.user = response;
+  req.user = response;
   next();
 };
 

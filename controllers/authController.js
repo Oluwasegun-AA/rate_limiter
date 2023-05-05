@@ -32,7 +32,7 @@ class Auth {
   static async signup(req, res) {
     const data = await db.postUser(req, res);
     return ResponseHandler.success(res, statusCodes.created, 'User created Successfully', {
-      token: encrypt(pick(data, ['id', 'username', 'rateLimit'])),
+      token: encrypt(pick(data, ['id', 'username', 'email', 'rateLimit'])),
     });
   }
 }

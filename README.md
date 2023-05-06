@@ -16,7 +16,7 @@
 
 - [x] Allow for rate limit specification
 - [x] Allows for limit time range customisation
-- [x] provides hard throttling when rate limit exceeded
+- [x] provides hard throttling when rate limit is exceeded
 - [x] Extendable
 
 ## Environment Variables
@@ -35,9 +35,9 @@ To run this project, you will need to add the following environment variables to
 
 ## Test
 - How To:
-    - The rate limiting functioonality is tested by making recurrent request to the endpoints. It has been configured such that
+    - The rate limiting functionality is tested by making recurrent request to the endpoints. It has been configured such that
       the API allows a max of `10 requests` per client within a duration of `1 mminute`. After 10 successful request Error `429` is retuned. Also,
-      the rate limit innformation is returned in the headers.
+      the rate limit information is returned in the headers.
 
 - Local env test
     - clone repo
@@ -45,7 +45,7 @@ To run this project, you will need to add the following environment variables to
     - run `yarn start`
     - make request to:
         - `localhost:5000/api/v1/auth/signup`
-        - `localhost:5000/api/v1/auth/signup`
+        - `localhost:5000/api/v1/auth/login`
         - `localhost:5000/api/v1/mail` [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/5289404-cc14cd2b-1367-4f99-8516-69524e05a036?action=collection%2Ffork&collection-url=entityId%3D5289404-cc14cd2b-1367-4f99-8516-69524e05a036%26entityType%3Dcollection%26workspaceId%3D6f8faf53-4393-4ceb-885e-f48e37fbbb34#?env%5BRate_limit%5D=W3sia2V5IjoidG9rZW4iLCJ2YWx1ZSI6IiIsImVuYWJsZWQiOnRydWUsInR5cGUiOiJkZWZhdWx0Iiwic2Vzc2lvblZhbHVlIjoiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBaQ0k2SWpkak1UUTFaREprTFdFek0yWXROR1EwWmkwNVlUQTBMV1F6TnpGbU5EVXdNekZrTWlJc0ltVnRZV2xzSWpvaWIyeDFkMkZ6WldkMWJtRmtaWEJ2YW5VdVoyMWguLi4iLCJzZXNzaW9uSW5kZXgiOjB9XQ==)
 - Remote Ephemeral server test
     - download postman collection 👉🏻 [downlad](https://www.postman.com/oluwasegun-adepoju/workspace/oluwasegun/collection/5289404-cc14cd2b-1367-4f99-8516-69524e05a036?action=share&creator=5289404) or click run in postman below
